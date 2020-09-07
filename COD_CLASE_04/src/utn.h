@@ -8,6 +8,8 @@
 #ifndef UTN_H_
 #define UTN_H_
 
-
+int utn_getNumber (int* pNumeroIngresado, int minimo, int maximo, char* mensaje, char* mensajeError, int reintentos);
+int utn_getNumbreFloat (float* pNumeroFloatIngresado, float minimo, float maximo, char* mensaje, char* mensajeError, int reintentos);
+int utn_getChar (char* pNombreIngresado, char* mensaje, char* mensajeError, int reintentos);
 
 #endif /* UTN_H_ */

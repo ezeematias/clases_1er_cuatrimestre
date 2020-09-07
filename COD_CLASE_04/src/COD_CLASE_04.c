@@ -10,37 +10,28 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "utn.h"
+
 
 int main(void) {
 	setbuf(stdout, NULL);
 
 	int numeroIngresado;
-	int resultadoScanf;
+	float numeroFloatIngresado;
+	char nombreIngresado;
 
-	printf("Ingrese un número entero:");
-	fflush(stdin);
-	resultadoScanf = scanf("%d",&numeroIngresado);
-	printf("%d", numeroIngresado);
-	printf("\n%d", resultadoScanf);
-
+	if (utn_getNumber(&numeroIngresado, 10, 50, "Ingrese un número", "Debe ingresar un número válido", 3) == 0)
+	{
+		if (utn_getNumbreFloat(&numeroFloatIngresado , 10.00, 100.00, "Ingrese número decimal: ", "Vuelva a ingresar un número decimal :" , 3)==0)
+		{
+			if (utn_getChar (&nombreIngresado, "Ingrese su nombre: ", "Coloque un nombre válido ", 3)== 0)
+			{
+				printf("El número ingresado es: %d", numeroIngresado);
+				printf("\nEl númro flotante ingresado es  :%.2f", numeroFloatIngresado);
+				printf("\nEl dueño de los números ingresados es %c", nombreIngresado);
+			}
+		}
+	}
 	return EXIT_SUCCESS;
 }
-
-
-
-int utn_getNumber (void)
-{
-	int retorno =-1;
-	int numeroIngresado;
-
-	printf("Ingrese un número entero:");
-	fflush(stdin);
-	scanf("%d",numeroIngresado);
-
-
-
-	return retorno;
-}
-
-
 
