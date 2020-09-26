@@ -15,7 +15,7 @@
 
 int main(void) {
 	setbuf(stdout, NULL);
-
+/*
 	int numeroIngresado;
 	float numeroFloatIngresado;
 	char nombreIngresado;
@@ -32,6 +32,20 @@ int main(void) {
 			}
 		}
 	}
+	*/
+
+	int prueba = 5;
+	int prueba2 = -1;
+	int prueba3 = 3;
+	int resultado;
+
+	get_factorial(prueba, &resultado);
+	printf("%d", resultado);
+	get_factorial(prueba2, &resultado);
+	printf("\n%d", resultado);
+	get_factorial(prueba3, &resultado);
+	printf("\n%d", resultado);
+
 	return EXIT_SUCCESS;
 }
 

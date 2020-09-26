@@ -106,3 +106,23 @@ int utn_getChar (char* pNombreIngresado, char* mensaje, char* mensajeError, int 
 	}
 	return retorno;
 }
+int  get_factorial(int numeroX, int *resultado) {
+	int retorno  = -1;
+	int repeticiones;
+	int bufferResultado = 1;
+	if (numeroX != NULL && numeroX > 0) {
+		for (repeticiones = numeroX ; repeticiones > 1 ; repeticiones--){
+			bufferResultado *= repeticiones;
+		}
+		*resultado = bufferResultado;
+		retorno = 0;
+	}else{
+		if (numeroX == 0){
+		*resultado = 1;
+		retorno = 0;
+		} else{
+			printf("\n El número operador no puede ser negativo");
+		}
+	}
+	return retorno;
+}
