@@ -1,10 +1,10 @@
 /*
  ============================================================================
- Name        : TP2.c
+ Name        : Ghost
  Author      : Unía, Ezequiel Matías
  Version     :
  Copyright   :
- Description : Trabajo préctico 2
+ Description : ABM Fantasma
  ============================================================================
  */
 
@@ -15,6 +15,8 @@ int utn_sortArrayInt(int* pArray, int len);
 int utn_printArrayInt(int* pArray, int len);
 int utn_getInt(int *pArray, int len, int attempts, char* msg, char* msgError, int max, int min);
 int utn_getFloat(float *pArray, int len, int attempts, char* msg, char* msgError, int max, int min);
-int utn_getChar (char* pArray, int len, char* msg, char* msgError, int attempts);
+int utn_getName (char* pArray, int len, char* msg, char* msgError, int attempts);
+int utn_getAddress (char* pArray, int len, char* msg, char* msgError, int attempts);
+int utn_getEmail (char* pArray, int len, char* msg, char* msgError, int attempts);
 
 #endif /* UTN_H_ */

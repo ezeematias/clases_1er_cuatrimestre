@@ -12,12 +12,31 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "utn.h"
-#include "alumno.h"
 
 int main(void)
 {
 	setbuf(stdout, NULL);
+	int bufferId;
 
+	if(utn_getInt(&bufferId, 50, 2, "\n----- INGRESE ID DEL EMPLEADO -----\n", "NO ES UNA OPCIÓN VÁLIDA\n", 20000, 1)==0)
+		{
+			printf("%d",bufferId);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 	int op;
 	int indice;
 	Alumno arrayAlumnos[5];
@@ -52,7 +71,7 @@ int main(void)
 
 		}
 	}while(op != 3);
-
+*/
 	return EXIT_SUCCESS;
 }
 

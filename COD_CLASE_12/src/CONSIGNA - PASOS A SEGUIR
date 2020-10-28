@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+0) leer el enunciado 10 veces
+1) paso 1: definir palabras (sustantivos)
+2) definir entidades y sus campos
+3) relaciones entre las entidades
+4) simplificar (eliminar alguna entidad que este de mas)
+
+
+*pantalla
+--idpantalla
+--isEmpty
+--nombre de pantalla
+--tipo de pantalla
+--precio de publicidad en la pantalla, por dia: OK
+--direccion
+
+*Contratacion=publicidad
+--idcontratacion
+--isEmpty
+--nombre del archivo: OK
+--cantidad de dias : OK
+--cuitCliente : refrenciar al cliente -- RELACION : muchas cont: 1 cliente
+--idPantalla : referenciar a la pantalla-- RELACION : muchas cont:1 pantalla
